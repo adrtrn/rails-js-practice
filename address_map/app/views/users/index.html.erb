@@ -15,10 +15,8 @@
     <thead>
       <tr>
             <th>Name</th>
-            <th>Address</th>
+            <th>Location</th>
             <th></th>
-        <th></th>
-        <th></th>
       </tr>
     </thead>
 
@@ -26,15 +24,16 @@
       <%= content_tag_for(:tr, @users) do |user| %>
             <td><%= user.name %></td>
             <td><%= user.address %></td>
-        <td><%= link_to 'Edit', edit_user_path(user) %></td>
-        <td><%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        
+        <td><%= link_to 'Edit', edit_user_path(user) %> | <%= link_to 'Delete', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       <% end %>
     </tbody>
   </table>
 </div>
-<div style='width: 800px;'>
+<div style='margin: auto;'>
   <div id="map" style='width: 1140px; height: 700px;'></div>
 </div>
+
 <script type="text/javascript">
 handler = Gmaps.build('Google');
 handler.buildMap({
