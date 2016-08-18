@@ -1,0 +1,23 @@
+<% if @error %>
+<p> fart </p>
+<% end %>
+
+
+<%= form_for([@category, @category.items.build]) do |f| %>
+<h3> Sell an Item </h3>
+
+<p> 
+  
+  <%= f.label :title %>
+  <%= f.text_field :title , size: 45 %>
+</p>
+<p>
+  <%= f.label :price %>
+  <%= f.text_field :price, size: 10 %>
+</p>
+  <%= f.label :email %>
+  <%= f.text_field :email %>
+<p>
+    <%= f.submit %>
+  </p>  
+  <% end %>

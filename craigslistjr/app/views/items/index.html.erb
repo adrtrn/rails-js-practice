@@ -1,0 +1,8 @@
+
+
+<% @items.each do |item| %>
+<% if item.category_id == @category.id %>
+  <li><a href="<%= @category.id %>/items/<%= item.id %>">$<%= item.price %> - <%= item.title %></a></li>
+  <% end %>
+<% end %>
+
