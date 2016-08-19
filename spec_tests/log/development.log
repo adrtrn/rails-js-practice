@@ -1,0 +1,625 @@
+  [1m[36mSQL (2.0ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (10.5ms)[0m  DROP TABLE "games"
+  [1m[36m (16.3ms)[0m  [1mCREATE TABLE "games" ("id" serial primary key, "computer_throw" character varying(255), "user_throw" character varying(255), "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (12.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-19 15:28:20 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  [1m[35mGame Load (8.0ms)[0m  SELECT  "games".* FROM "games"   ORDER BY created_at DESC LIMIT 5
+  Rendered games/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 4071ms (Views: 4059.8ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:24 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:25 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:25 -0700
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:25 -0700
+
+
+Started GET "/assets/games.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:25 -0700
+
+
+Started GET "/assets/font-awesome/fontawesome-webfont.woff2?v=4.5.0" for 127.0.0.1 at 2016-08-19 15:28:25 -0700
+
+
+Started GET "/games/new" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+Processing by GamesController#new as HTML
+  Rendered games/_form.html.erb (14.1ms)
+  Rendered games/_form.html.erb (0.8ms)
+  Rendered games/_form.html.erb (0.6ms)
+  Rendered games/new.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:28 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2016-08-19 15:28:30 -0700
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyfTiIehA0ROgSbW3AebhD2ISvQyHqpYXGYS4B9hbJ4=", "game"=>{"user_throw"=>"paper"}}
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "games" ("computer_throw", "created_at", "updated_at", "user_throw") VALUES ($1, $2, $3, $4) RETURNING "id"  [["computer_throw", "paper"], ["created_at", "2016-08-19 22:28:30.827929"], ["updated_at", "2016-08-19 22:28:30.827929"], ["user_throw", "paper"]]
+  [1m[36m (6.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/games/1
+Completed 302 Found in 18ms (ActiveRecord: 7.7ms)
+
+
+Started GET "/games/1" for 127.0.0.1 at 2016-08-19 15:28:30 -0700
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGame Load (0.4ms)[0m  SELECT  "games".* FROM "games"  WHERE "games"."id" = $1 LIMIT 1  [["id", 1]]
+  Rendered games/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:30 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:30 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:30 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:31 -0700
+
+
+Started GET "/games/new" for 127.0.0.1 at 2016-08-19 15:28:32 -0700
+Processing by GamesController#new as HTML
+  Rendered games/_form.html.erb (1.7ms)
+  Rendered games/_form.html.erb (0.7ms)
+  Rendered games/_form.html.erb (0.8ms)
+  Rendered games/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 24ms (Views: 24.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyfTiIehA0ROgSbW3AebhD2ISvQyHqpYXGYS4B9hbJ4=", "game"=>{"user_throw"=>"rock"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "games" ("computer_throw", "created_at", "updated_at", "user_throw") VALUES ($1, $2, $3, $4) RETURNING "id"  [["computer_throw", "paper"], ["created_at", "2016-08-19 22:28:33.901811"], ["updated_at", "2016-08-19 22:28:33.901811"], ["user_throw", "rock"]]
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/games/2
+Completed 302 Found in 7ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/games/2" for 127.0.0.1 at 2016-08-19 15:28:33 -0700
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGame Load (0.4ms)[0m  SELECT  "games".* FROM "games"  WHERE "games"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered games/show.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:34 -0700
+
+
+Started GET "/games/new" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+Processing by GamesController#new as HTML
+  Rendered games/_form.html.erb (1.3ms)
+  Rendered games/_form.html.erb (0.8ms)
+  Rendered games/_form.html.erb (0.8ms)
+  Rendered games/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 21ms (Views: 20.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:35 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyfTiIehA0ROgSbW3AebhD2ISvQyHqpYXGYS4B9hbJ4=", "game"=>{"user_throw"=>"rock"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "games" ("computer_throw", "created_at", "updated_at", "user_throw") VALUES ($1, $2, $3, $4) RETURNING "id"  [["computer_throw", "rock"], ["created_at", "2016-08-19 22:28:36.516309"], ["updated_at", "2016-08-19 22:28:36.516309"], ["user_throw", "rock"]]
+  [1m[36m (3.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/games/3
+Completed 302 Found in 8ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/games/3" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGame Load (0.4ms)[0m  SELECT  "games".* FROM "games"  WHERE "games"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered games/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:36 -0700
+
+
+Started GET "/games/new" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+Processing by GamesController#new as HTML
+  Rendered games/_form.html.erb (1.4ms)
+  Rendered games/_form.html.erb (0.7ms)
+  Rendered games/_form.html.erb (0.6ms)
+  Rendered games/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 23ms (Views: 22.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyfTiIehA0ROgSbW3AebhD2ISvQyHqpYXGYS4B9hbJ4=", "game"=>{"user_throw"=>"rock"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "games" ("computer_throw", "created_at", "updated_at", "user_throw") VALUES ($1, $2, $3, $4) RETURNING "id"  [["computer_throw", "paper"], ["created_at", "2016-08-19 22:28:39.940561"], ["updated_at", "2016-08-19 22:28:39.940561"], ["user_throw", "rock"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/games/4
+Completed 302 Found in 5ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/games/4" for 127.0.0.1 at 2016-08-19 15:28:39 -0700
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mGame Load (0.4ms)[0m  SELECT  "games".* FROM "games"  WHERE "games"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered games/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:40 -0700
+
+
+Started GET "/games/new" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+Processing by GamesController#new as HTML
+  Rendered games/_form.html.erb (1.4ms)
+  Rendered games/_form.html.erb (0.6ms)
+  Rendered games/_form.html.erb (0.5ms)
+  Rendered games/new.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 22ms (Views: 21.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:42 -0700
+
+
+Started POST "/games" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WyfTiIehA0ROgSbW3AebhD2ISvQyHqpYXGYS4B9hbJ4=", "game"=>{"user_throw"=>"rock"}}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "games" ("computer_throw", "created_at", "updated_at", "user_throw") VALUES ($1, $2, $3, $4) RETURNING "id"  [["computer_throw", "paper"], ["created_at", "2016-08-19 22:28:43.074521"], ["updated_at", "2016-08-19 22:28:43.074521"], ["user_throw", "rock"]]
+  [1m[36m (3.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://0.0.0.0:3000/games/5
+Completed 302 Found in 8ms (ActiveRecord: 3.8ms)
+
+
+Started GET "/games/5" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mGame Load (0.5ms)[0m  SELECT  "games".* FROM "games"  WHERE "games"."id" = $1 LIMIT 1  [["id", 5]]
+  Rendered games/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-08-19 15:28:43 -0700
